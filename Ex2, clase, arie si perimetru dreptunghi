@@ -7,17 +7,20 @@ using namespace std;
 #include <conio.h>
 #include <string.h>
 
-    int l,L;
+
 
 class Dreptunghi
-{
+{  int l,L;
 public:
     void arie();
     void perimetru();
 };
 
 void Dreptunghi::arie()
-{
+{printf("Introduceti latime dreptunghi:");
+scanf("%d",&L);
+printf("\nIntroduceti lungime dreptunghi:");
+scanf("%d",&l);
     printf("\nAria dreptunghiului este: ");
 printf("\n%d", L*l);
 }
@@ -30,10 +33,6 @@ printf("\n%d",2*(l+L));
 
 int main()
 {
-printf("Introduceti latime dreptunghi:");
-scanf("%d",&L);
-printf("\nIntroduceti lungime dreptunghi:");
-scanf("%d",&l);
 Dreptunghi p;
 p.arie();
 printf("\n");
