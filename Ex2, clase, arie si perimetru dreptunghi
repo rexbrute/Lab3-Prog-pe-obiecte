@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+
+    int l,L;
+
+class Dreptunghi
+{
+public:
+    void arie();
+    void perimetru();
+};
+
+void Dreptunghi::arie()
+{
+    printf("\nAria dreptunghiului este: ");
+printf("\n%d", L*l);
+}
+void Dreptunghi::perimetru()
+{
+printf("\nPerimetrul dreptunghiului este: ");
+printf("\n%d",2*(l+L));
+
+}
+
+int main()
+{
+printf("Introduceti latime dreptunghi:");
+scanf("%d",&L);
+printf("\nIntroduceti lungime dreptunghi:");
+scanf("%d",&l);
+Dreptunghi p;
+p.arie();
+printf("\n");
+p.perimetru();
+
+return 0;
+}
