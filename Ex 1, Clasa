@@ -1,0 +1,77 @@
+#include <iostream>
+
+using namespace std;
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+
+  int rab[100],bez[100],cab[100];
+    int b;
+    int i;
+    int c,n;
+class Vector
+{
+public:
+    void citeste();
+    void tiparire();
+    void inmultire();
+    void suma();
+};
+
+void Vector::citeste()
+{
+
+    printf("Introduceti numar: ");
+    scanf("%d",&b);
+    for(i=0;i<b;i++)
+    scanf("%d",&bez[i]);
+}
+void Vector::tiparire()
+{
+
+
+    for(i=0;i<b;i++)
+    printf("%d ",bez[i]);
+}
+void Vector::inmultire()
+{printf("Numar inmultire:");
+scanf("%d",&c);
+for(i=0;i<b;i++)
+  bez[i]=bez[i]*c;
+  printf("\nVectorul inmultit:");
+   for(i=0;i<b;i++)
+    printf("%d ",bez[i]);
+
+}
+void Vector::suma()
+{
+printf("Introduceti al doilea vector");
+printf("\nNumarul de elemente:");
+scanf("%d",&n);
+for(i=0;i<b;i++)
+    scanf("%d",&cab[i]);
+
+    for(i=0;i<b&&i<n;i++)
+        rab[i]=cab[i]+bez[i];
+    printf("\nSuma celor doi vectori este urmatoarea:");
+    for(i=0;i<b;i++)
+    printf("%d ",rab[i]);
+
+
+
+}
+int main()
+{
+
+Vector p;
+p.citeste();
+p.tiparire();
+printf("\n");
+p.inmultire();
+printf("\n");
+p.suma();
+
+return 0;
+}
